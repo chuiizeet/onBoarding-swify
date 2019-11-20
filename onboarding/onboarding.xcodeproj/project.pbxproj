@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		8804496E2385DD8000B88003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8804496C2385DD8000B88003 /* Main.storyboard */; };
 		880449702385DD9200B88003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8804496F2385DD9200B88003 /* Assets.xcassets */; };
 		880449732385DD9200B88003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880449712385DD9200B88003 /* LaunchScreen.storyboard */; };
+		8804497C2385E23200B88003 /* ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804497B2385E23200B88003 /* ext.swift */; };
+		8804497E2385E73100B88003 /* SecOBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8804497D2385E73100B88003 /* SecOBVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		8804496F2385DD9200B88003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		880449722385DD9200B88003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		880449742385DD9200B88003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8804497B2385E23200B88003 /* ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ext.swift; sourceTree = "<group>"; };
+		8804497D2385E73100B88003 /* SecOBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecOBVC.swift; sourceTree = "<group>"; };
 		951A99D48860EA3716B2DB21 /* Pods_onboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_onboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,14 +73,24 @@
 		880449652385DD8000B88003 /* onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				8804497A2385E19E00B88003 /* ob */,
 				880449662385DD8000B88003 /* AppDelegate.swift */,
-				8804496A2385DD8000B88003 /* ViewController.swift */,
 				8804496C2385DD8000B88003 /* Main.storyboard */,
 				8804496F2385DD9200B88003 /* Assets.xcassets */,
 				880449712385DD9200B88003 /* LaunchScreen.storyboard */,
 				880449742385DD9200B88003 /* Info.plist */,
+				8804497B2385E23200B88003 /* ext.swift */,
 			);
 			path = onboarding;
+			sourceTree = "<group>";
+		};
+		8804497A2385E19E00B88003 /* ob */ = {
+			isa = PBXGroup;
+			children = (
+				8804496A2385DD8000B88003 /* ViewController.swift */,
+				8804497D2385E73100B88003 /* SecOBVC.swift */,
+			);
+			path = ob;
 			sourceTree = "<group>";
 		};
 		BE7BD79321C777DE48E0EDBE /* Pods */ = {
@@ -85,7 +99,6 @@
 				1151000CA48391E667A4A824 /* Pods-onboarding.debug.xcconfig */,
 				61FF1CF3AEB65318B59CC63F /* Pods-onboarding.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,6 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8804496B2385DD8000B88003 /* ViewController.swift in Sources */,
+				8804497E2385E73100B88003 /* SecOBVC.swift in Sources */,
+				8804497C2385E23200B88003 /* ext.swift in Sources */,
 				880449672385DD8000B88003 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
